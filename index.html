@@ -1,12 +1,65 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>aurelia-interiors</title>
+    <meta name="theme-color" content="#F8F6F1" />
+    <meta name="robots" content="index, follow" />
+    <meta name="description" content="AURELIA INTERIORS — Tamil Nadu interior architecture studio showcasing residential homes, villas, jewellery showrooms, commercial studios, modular kitchens, and turnkey execution across Chennai, Coimbatore, Madurai, and beyond." />
+
+    <!-- Open Graph Metadata -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Aurelia Interiors" />
+    <meta property="og:locale" content="en_IN" />
+    <meta property="og:title" content="Aurelia Interiors | Tamil Nadu Interior Architecture & Turnkey Design" />
+    <meta property="og:description" content="Spaces that reflect the art of living. Residential homes, jewellery showrooms, commercial studios, and modular kitchens across Tamil Nadu." />
+    <meta property="og:image" content="/images/hero-chennai-courtyard.jpg" />
+
+    <!-- Twitter / X Metadata -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Aurelia Interiors | Tamil Nadu Interior Architecture" />
+    <meta name="twitter:description" content="Spaces that reflect the art of living. Residential homes, jewellery showrooms, and turnkey interiors across Tamil Nadu." />
+    <meta name="twitter:image" content="/images/hero-chennai-courtyard.jpg" />
+
+    <!-- Preload Primary Hero LCP Image -->
+    <link rel="preload" as="image" href="/images/hero-chennai-courtyard.jpg" fetchpriority="high" />
+
+    <!-- Typography: Playfair Display & DM Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
+
+    <!-- Factual Structured Data (No Fabricated Addresses, Phones, or Ratings) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "name": "Aurelia Interiors",
+            "slogan": "Spaces that reflect the art of living.",
+            "areaServed": {
+              "@type": "State",
+              "name": "Tamil Nadu",
+              "containedInPlace": {
+                "@type": "Country",
+                "name": "India"
+              }
+            }
+          },
+          {
+            "@type": "WebSite",
+            "name": "Aurelia Interiors",
+            "inLanguage": "en-IN"
+          }
+        ]
+      }
+    </script>
+
+    <title>Aurelia Interiors | Spaces that reflect the art of living</title>
   </head>
-  <body>
+  <body class="bg-linen text-charcoal antialiased selection:bg-bronze/20 selection:text-charcoal min-h-screen">
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

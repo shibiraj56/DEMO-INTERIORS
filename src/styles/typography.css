@@ -1,0 +1,173 @@
+/* Editorial & Architectural Typography System */
+
+@layer base {
+  /* Heading Hierarchy Defaults */
+  h1 {
+    font-family: var(--font-serif);
+    font-weight: 500;
+    line-height: var(--leading-tight);
+    letter-spacing: var(--tracking-tight);
+    color: var(--color-charcoal);
+    font-size: clamp(2.25rem, 5vw, 4rem);
+  }
+
+  h2 {
+    font-family: var(--font-serif);
+    font-weight: 500;
+    line-height: var(--leading-tight);
+    letter-spacing: var(--tracking-tight);
+    color: var(--color-charcoal);
+    font-size: clamp(1.875rem, 3.8vw, 3rem);
+  }
+
+  h3 {
+    font-family: var(--font-serif);
+    font-weight: 500;
+    line-height: var(--leading-snug);
+    letter-spacing: var(--tracking-normal);
+    color: var(--color-charcoal);
+    font-size: clamp(1.5rem, 2.5vw, 2.25rem);
+  }
+
+  h4 {
+    font-family: var(--font-serif);
+    font-weight: 500;
+    line-height: var(--leading-snug);
+    color: var(--color-charcoal);
+    font-size: clamp(1.25rem, 1.8vw, 1.625rem);
+  }
+
+  h5 {
+    font-family: var(--font-sans);
+    font-weight: 600;
+    line-height: var(--leading-snug);
+    letter-spacing: var(--tracking-wide);
+    text-transform: uppercase;
+    color: var(--color-charcoal);
+    font-size: 0.875rem;
+  }
+
+  h6 {
+    font-family: var(--font-sans);
+    font-weight: 600;
+    letter-spacing: var(--tracking-widest);
+    text-transform: uppercase;
+    color: var(--color-taupe);
+    font-size: 0.75rem;
+  }
+
+  /* Editorial Body & Interface Copy */
+  body, p, li, label, input, textarea, select {
+    font-family: var(--font-sans);
+    color: var(--color-charcoal);
+    line-height: var(--leading-normal);
+  }
+}
+
+.h1 {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+  font-size: clamp(2.25rem, 5vw, 4rem);
+}
+
+.h2 {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+  font-size: clamp(1.875rem, 3.8vw, 3rem);
+}
+
+.h3 {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  line-height: var(--leading-snug);
+  letter-spacing: var(--tracking-normal);
+  font-size: clamp(1.5rem, 2.5vw, 2.25rem);
+}
+
+.h4 {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  line-height: var(--leading-snug);
+  font-size: clamp(1.25rem, 1.8vw, 1.625rem);
+}
+
+.h5 {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  line-height: var(--leading-snug);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  font-size: 0.875rem;
+}
+
+.h6 {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  letter-spacing: var(--tracking-widest);
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+
+/* Editorial Kicker / Eyebrow */
+.kicker {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-editorial);
+  color: var(--color-bronze);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.kicker::before {
+  content: '';
+  display: inline-block;
+  width: 1.75rem;
+  height: 1px;
+  background-color: var(--color-bronze);
+}
+
+/* Editorial Lead Paragraph */
+.lead {
+  font-family: var(--font-sans);
+  font-size: clamp(1.0625rem, 1.4vw, 1.25rem);
+  line-height: var(--leading-relaxed);
+  color: var(--color-taupe);
+  font-weight: 300;
+}
+
+/* Editorial Serif Quotes */
+.pullquote {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: clamp(1.35rem, 2.2vw, 2rem);
+  line-height: var(--leading-snug);
+  color: var(--color-charcoal);
+  border-left: 2px solid var(--color-bronze);
+  padding-left: 1.5rem;
+}
+
+/* Caption and Fine Print */
+.caption {
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  letter-spacing: var(--tracking-wide);
+  color: var(--color-taupe);
+  line-height: var(--leading-normal);
+}
+
+/* Number / Stat Display */
+.stat-number {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: clamp(2.5rem, 5vw, 4.25rem);
+  line-height: 1;
+  color: var(--color-charcoal);
+  letter-spacing: var(--tracking-tight);
+}
